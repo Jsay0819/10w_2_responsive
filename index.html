@@ -1,110 +1,190 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/mian.css" />
     <link rel="icon" href="favicon/favicon.ico" />
-    <title>FLAT DESIGN 세희꺼</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="images/icon/flat-design-touch.png"
+    />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/flat.js"></script>
+
+    <title>FLAT DESIGN</title>
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <a href="#"><img src="favicon/flat-design-touch.png" alt="로고" /></a>
-      </div>
-      <div class="menu">
-        <ul>
-          <li><a href="#">홈</a></li>
-          <li><a href="#">플랫디자인이란?</a></li>
-          <li><a href="#">갤러리</a></li>
-          <li><a href="#">문의사항</a></li>
-        </ul>
-      </div>
-      <div class="personal">
-        <ul>
+    <!-- 전체 영역 -->
+    <div class="wrap">
+      <!-- info_section -->
+      <section class="info_section">
+        <ul class="info_list">
           <li>
-            <a href="#"><img src="images/s_images/info_icon_01.png" alt="홈" /></a>
-            <a href="#"><img src="images/s_images/info_icon_02.png" alt="잠금" /></a>
-            <a href="#"
-              ><img src="images/s_images/info_icon_03.png" alt="개인정보"
+            <a href="index.html"
+              ><img src="images/s_images/info_icon_01.png" alt="홈"
             /></a>
-            <a href="#"><img src="images/s_images/info_icon_04.png" alt="돋보기" /></a>
+          </li>
+          <li>
+            <a href="index.html"
+              ><img src="images/s_images/info_icon_02.png" alt="잠금"
+            /></a>
+          </li>
+          <li>
+            <a href="index.html"
+              ><img src="images/s_images/info_icon_03.png" alt="로그인"
+            /></a>
+          </li>
+          <li>
+            <a href="index.html"
+              ><img src="images/s_images/info_icon_04.png" alt="검색"
+            /></a>
           </li>
         </ul>
-      </div>
-    </header>
-    <main>
-      <div class="main1">
-        <nav class="left">
-          <img src="images/p_images/slider_01.jpg" alt="트로피" />
-        </nav>
-        <nav class="middle">
-          <div>
-            <img src="images/p_images/gallery_01.jpg" alt="로켓" />
-            <p>디자인 트렌트 플랫</p>
-          </div>
-          <div>
-            <img src="images/p_images/gallery_02.jpg" alt="구름" />
-            <p>원색이 포인트 플랫</p>
-          </div>
-        </nav>
-        <nav class="right">
-          <ul>
-            <p>인기 검색어</p>
-            <li><a href="#">1. 반응형 웹</a></li>
-            <li><a href="#">2. 미디어 쿼리</a></li>
-            <li><a href="#">3. 뷰포트</a></li>
-            <li><a href="#">4. CSS트릭스</a></li>
-            <li><a href="#">5. W3C</a></li>
-            <li><a href="#">6. 루크W</a></li>
-            <li><a href="#">7. CSS젠 가든</a></li>
-            <li><a href="#">8. 클리어 보스</a></li>
-            <li><a href="#">9. XE</a></li>
-            <li><a href="#">10. 워드프레스</a></li>
+      </section>
+      <!-- header -->
+      <header class="header">
+        <h1 class="logo">
+          <a href="index.html"
+            >flat <br />
+            design</a
+          >
+        </h1>
+        <nav class="nav">
+          <ul class="gnb">
+            <li>
+              <a href="index.html">홈</a
+              ><span class="sub_menu_toggle_btn">하위 메뉴 토글 버튼</span>
+            </li>
+            <li>
+              <a href="introduce.html">플랫 디자인이란?</a
+              ><span class="sub_menu_toggle_btn">하위 메뉴 토글 버튼</span>
+            </li>
+            <li>
+              <a href="gallery.html">갤러리</a
+              ><span class="sub_menu_toggle_btn">하위 메뉴 토글 버튼</span>
+            </li>
+            <li>
+              <a href="board.html">문의사항</a
+              ><span class="sub_menu_toggle_btn">하위 메뉴 토글 버튼</span>
+            </li>
           </ul>
         </nav>
-      </div>
-      <div class="main2">
-        <nav class="main2_1">
-          <ul>
-            <p>최신 글</p>
-            <li><a href="#">어쩌구저쩌구</a></li>
-            <li><a href="#">어쩌구저쩌구</a></li>
-            <li><a href="#">어쩌구저쩌구</a></li>
-            <li><a href="#">어쩌구저쩌구</a></li>
-            <li><a href="#">어쩌구저쩌구</a></li>
-            <li><a href="#">어쩌구저쩌구</a></li>
+        <span class="menu_toggle_btn">전체 메뉴 토글 버튼</span>
+      </header>
+      <!-- slide_section -->
+      <section class="slider_section">
+        <span class="prev_btn">이전 버튼</span
+        ><span class="next_btn">다음 버튼</span>
+      </section>
+      <!-- latest_post_section -->
+      <section class="latest_post_section">
+        <h2 class="title">최근 글</h2>
+        <ul class="latest_post_list">
+          <li><a href="">안녕하세요 홈페이지가 오픈...</a></li>
+          <li><a href="">홈페이지 리뉴얼...</a></li>
+          <li><a href="">flat design은...</a></li>
+          <li><a href="">blog에서 다양한 정보를...</a></li>
+          <li><a href="">저는 누굴까요?...</a></li>
+        </ul>
+      </section>
+      <!-- popular_post_section -->
+      <section class="popular_post_section">
+        <h2 class="title">인기 글</h2>
+        <ul class="popular_post_list">
+          <li><a href="">안녕하세요 홈페이지가 오픈...</a></li>
+          <li><a href="">홈페이지 리뉴얼...</a></li>
+          <li><a href="">flat design은...</a></li>
+          <li><a href="">blog에서 다양한 정보를...</a></li>
+          <li><a href="">저는 누굴까요?...</a></li>
+        </ul>
+      </section>
+      <!-- gallery_section -->
+      <section class="gallery_section">
+        <ul class="gallery_list">
+          <li>
+            <a href="#">
+              <figure>
+                <img src="images/p_images/gallery_01.jpg" alt="" />
+                <figcaption>디자인 트렌트 플랫</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <figure>
+                <img src="images/p_images/gallery_02.jpg" alt="" />
+                <figcaption>원색이 포인트 플랫</figcaption>
+              </figure>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- rankup_section -->
+      <section class="rankup_section">
+        <h2 class="title">인기 검색어</h2>
+        <ul class="rankup_list">
+          <li><a href="">반응형 웹</a></li>
+          <li><a href="">미디어 쿼리</a></li>
+          <li><a href="">뷰포트</a></li>
+          <li><a href="">CSS 트릭스</a></li>
+          <li><a href="">W3C</a></li>
+          <li><a href="">루크 W</a></li>
+          <li><a href="">CSS 젠 가든</a></li>
+          <li><a href="">클리어 보스</a></li>
+          <li><a href="">XE</a></li>
+          <li><a href="">워드프레스</a></li>
+        </ul>
+      </section>
+      <!-- banner_section -->
+      <section class="banner_section">
+        <div class="banner_box_01">
+          <a href=""><img src="images/s_images/w3c_logo.png" alt="" /></a>
+        </div>
+        <div class="banner_box_02">
+          <ul class="banner_list">
+            <li>
+              <a href=""><img src="images/s_images/js_logo.png" alt="" /></a>
+            </li>
+            <li>
+              <a href=""><img src="images/s_images/html_logo.png" alt="" /></a>
+            </li>
+            <li>
+              <a href=""><img src="images/s_images/css_logo.png" alt="" /></a>
+            </li>
           </ul>
-        </nav>
-        <nav class="main2_2">
-          <ul>
-            <p>인기 글</p>
-            <li><a href="#">어쩌구저쩌구</a></li>
-            <li><a href="#">어쩌구저쩌구</a></li>
-            <li><a href="#">어쩌구저쩌구</a></li>
-            <li><a href="#">어쩌구저쩌구</a></li>
-            <li><a href="#">어쩌구저쩌구</a></li>
-            <li><a href="#">어쩌구저쩌구</a></li>
-          </ul>
-        </nav>
-        <nav class="main2_3"><img src="s_images/w3c_logo.png" alt="" /></nav>
-        <nav class="main2_4">
-          <span><img src="s_images/js_logo.png" alt="java 로고" /> </span>
-          <span><img src="s_images/html_logo.png" alt="html 로고" /> </span>
-          <span><img src="s_images/css_logo.png" alt="css 로고" /> </span>
-        </nav>
-        <nav class="social">
-          <span
-            ><a href="#"><img src="s_images/social_icon_01.png" alt="트위터" /></a
-          ></span>
-          <span
-            ><a href="#"> <img src="s_images/social_icon_02.png" alt="페이스북" /></a
-          ></span>
-          <span
-            ><a href="#"> <img src="s_images/social_icon_03.png" alt="구글" /></a
-          ></span>
-        </nav>
-      </div>
-    </main>
-    <footer><p>COPYRIGHTⓒ 2023.FLAT DESIGN</p></footer>
+        </div>
+      </section>
+      <!-- social_section -->
+      <section class="social_section">
+        <ul class="social_list">
+          <li>
+            <a href=""
+              ><img src="images/s_images/social_icon_01.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img src="images/s_images/social_icon_02.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img src="images/s_images/social_icon_03.png" alt=""
+            /></a>
+          </li>
+        </ul>
+      </section>
+      <!-- footer -->
+      <footer class="footer_section">
+        <p>copyright&copy; 2014.flat design blog all rights reserved.</p>
+      </footer>
+    </div>
   </body>
 </html>
